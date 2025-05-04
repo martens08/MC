@@ -5,10 +5,10 @@ st.title("JOC REGAL")
 st.info("Introdueix la contrasenya per desbloquejar un missatge secret")
 
 
-input = st.text_input("Contrasenya: ", value=" ")
+input = st.text_input("Contrasenya: ", value="Escriu Aquí")
 
 if input == '2ANYSMC':
     with st.expander('MISSATGE DESBLOQUEJAT'):
         st.write(message)
-elif input != ' ':
+elif input != 'Escriu Aquí':
     st.write('Contrasenya Erronia')
