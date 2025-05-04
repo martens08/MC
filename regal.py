@@ -8,7 +8,7 @@ st.info("Introdueix la contrasenya per desbloquejar un missatge secret")
 input = st.text_input("Contrasenya: ", value="Escriu Aquí")
 
 if input == '2ANYSMC':
-    with st.expander('MISSATGE DESBLOQUEJAT'):
+    with st.expander('MISSATGE DESBLOQUEJAT ✅'):
         st.write(message)
 elif input != 'Escriu Aquí':
-    st.write('Contrasenya Erronia')
+    st.write('Contrasenya Erronia ❌')
